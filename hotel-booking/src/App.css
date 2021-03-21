@@ -183,9 +183,6 @@
     display: none;
   }
 }
-.Slider-container {
-  margin-top: 20%;
-}
 
 .Image-container {
   margin-top: 50%;
@@ -322,4 +319,8 @@
     display: inline-block;
     left: 40px;
   }
+}
+.d-block {
+  display: block !important;
+  width: 100% !important;
 }

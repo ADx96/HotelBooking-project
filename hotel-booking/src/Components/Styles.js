@@ -9,11 +9,9 @@ export const Logo = styled(Link)`
   }
 `;
 
-export const BigImage = styled.image``;
-
 export const Textblock = styled.div`
   position: absolute;
-  top: 276%;
+  top: 494%;
   right: 20px;
   background-color: black;
   color: white;
@@ -50,4 +48,11 @@ export const H11 = styled.h1`
   margin-top: 70px;
   margin-bottom: 70px;
   margin-right: 20%;
+`;
+export const ProductWrapper = styled.div``;
+export const SearchBarStyled = styled.input`
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 40%;
 `;
