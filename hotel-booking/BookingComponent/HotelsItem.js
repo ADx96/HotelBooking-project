@@ -5,14 +5,33 @@ import { Link } from "react-router-dom";
 const ProductItem = ({ hotel }) => {
   return (
     <ProductWrapper>
-      <Link to={`/BookNow/Hotel/${hotel.slug}`}>
-        <img alt={hotel.name} src={hotel.image} />
-      </Link>
+      <MDBRow>
+        <MDBCol md="3">
+          <MDBCard wide cascade>
+            <MDBView cascade>
+              <Link to={`/BookNow/Hotel/${hotel.slug}`}>
+                <MDBCardImage
+                  hover
+                  overlay="white-slight"
+                  className="card-img-top"
+                  src={hotel.image}
+                  alt="Card cap"
+                />
+              </Link>
+            </MDBView>
 
-      <p>{hotel.name}</p>
-      <p>{hotel.description}</p>
-      <p className="product-price">{hotel.price} KD</p>
-      <Book hotelId={hotel.id} />
+            <MDBCardBody cascade className="text-center">
+              <MDBCardTitle className="card-title">
+                <strong>{hotel.name}</strong>
+              </MDBCardTitle>
+
+              <MDBCardText>{hotel.description}</MDBCardText>
+              <p className="product-price">{hotel.price} KD</p>
+              <Book hotelId={hotel.id} />
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+      </MDBRow>
     </ProductWrapper>
   );
 };

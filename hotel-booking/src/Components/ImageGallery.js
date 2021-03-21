@@ -5,16 +5,63 @@ function ImageGallery() {
   return (
     <Gallery>
       <>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-          <div class="hovereffect">
-            <img
-              class="img-responsive"
-              src="http://placehold.it/350x200"
-              alt=""
-            />
-            <div class="overlay">
-              <h2>Hover effect 1</h2>
-              <a class="info">link here</a>
+        <div className="gallarycontainer">
+          <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div className="hovereffect">
+              <img
+                className="img-responsive"
+                src="http://placehold.it/350x200"
+                alt=""
+              />
+              <div className="overlay">
+                <h2>Hover effect 1</h2>
+                <a className="info">Check details here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="gallarycontainer">
+          <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div className="hovereffect">
+              <img
+                className="img-responsive"
+                src="http://placehold.it/350x200"
+                alt=""
+              />
+              <div className="overlay">
+                <h2>Hover effect 1</h2>
+                <a className="info">Check details here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="gallarycontainer">
+          <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div className="hovereffect">
+              <img
+                className="img-responsive"
+                src="http://placehold.it/350x200"
+                alt=""
+              />
+              <div className="overlay">
+                <h2>Hover effect 1</h2>
+                <a className="info">Check details here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="gallarycontainer">
+          <div className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div className="hovereffect">
+              <img
+                className="img-responsive"
+                src="http://placehold.it/350x200"
+                alt=""
+              />
+              <div className="overlay">
+                <h2>Hover effect 1</h2>
+                <a className="info">Check details here</a>
+              </div>
             </div>
           </div>
         </div>

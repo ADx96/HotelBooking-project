@@ -14,10 +14,12 @@ import {
 import "mdbreact/dist/css/mdb.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
-
+import "../App.css";
+import { H11 } from "./Styles";
 const Cards = () => {
   return (
     <CardsContainer>
+      <H11> TOP HOTELS BOOKING </H11>
       <MDBRow>
         <MDBCol md="3">
           <MDBCard wide cascade>
@@ -42,7 +44,7 @@ const Cards = () => {
                 Sed ut perspiciatis unde omnis iste natus sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam.{" "}
               </MDBCardText>
-              <MDBBtn color="unique">Button</MDBBtn>
+              <MDBBtn>BOOK NOW</MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -68,7 +70,7 @@ const Cards = () => {
                 accusantium doloremque laudantium, totam rem aperiam.{" "}
               </MDBCardText>
 
-              <MDBBtn color="unique">Button</MDBBtn>
+              <MDBBtn>BOOK NOW</MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -94,7 +96,7 @@ const Cards = () => {
                 accusantium doloremque laudantium, totam rem aperiam.{" "}
               </MDBCardText>
 
-              <MDBBtn color="unique">Button</MDBBtn>
+              <MDBBtn>BOOK NOW</MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -124,7 +126,7 @@ const Cards = () => {
                   Sed ut perspiciatis unde omnis iste natus sit voluptatem
                   accusantium doloremque laudantium, totam rem aperiam.{" "}
                 </MDBCardText>
-                <MDBBtn color="unique">Button</MDBBtn>
+                <MDBBtn>BOOK NOW</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
@@ -150,7 +152,7 @@ const Cards = () => {
                   accusantium doloremque laudantium, totam rem aperiam.{" "}
                 </MDBCardText>
 
-                <MDBBtn color="unique">Button</MDBBtn>
+                <MDBBtn>BOOK NOW</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCol>
@@ -176,7 +178,7 @@ const Cards = () => {
                   accusantium doloremque laudantium, totam rem aperiam.{" "}
                 </MDBCardText>
 
-                <MDBBtn color="unique">Button</MDBBtn>
+                <MDBBtn>BOOK NOW</MDBBtn>
               </MDBCardBody>
             </MDBCard>
           </MDBCol>

@@ -4,23 +4,23 @@ const FooterP = () => {
     <footer className="footer">
       <div className="footer-left col-md-4 col-sm-6">
         <p className="about">
-          <span> About the company</span> Our company care about the customer
-          that searching about high quality hotles in almost all the countries
+          <span> About Us</span> Our company care about the customer that
+          searching about high quality hotles in almost all the countries
         </p>
         <div className="icons">
-          <a href="www.google.com">
+          <a href="">
             <i className="fab fa-facebook"></i>
           </a>
-          <a href="www.google.com">
+          <a href="">
             <i className="fab fa-twitter"></i>
           </a>
-          <a href="www.google.com">
+          <a href="">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="www.google.com">
+          <a href="">
             <i className="fab fa-google-plus"></i>
           </a>
-          <a href="www.google.com">
+          <a href="">
             <i className="fab fa-instagram"></i>
           </a>
         </div>

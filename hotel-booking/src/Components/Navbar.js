@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
 import { Logo } from "./Styles";
-
 import Dropdown from "../Components/DropDown";
 
 function NavBar() {
@@ -22,18 +21,20 @@ function NavBar() {
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setDropdown(true);
+      setDropdown(false);
     } else {
-      setDropdown(true);
+      setDropdown(false);
     }
   };
 
   return (
     <>
       <nav className="navbar">
-        <Logo className="navbar-brand" to="/">
-          <img src="" alt="logo" />
-        </Logo>
+        <Link to="/HomePage">
+          <Logo className="navbar-brand" to="/">
+            <img src="" alt="logo" />
+          </Logo>
+        </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
@@ -48,14 +49,10 @@ function NavBar() {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link
-              to="/services"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Book Now <i className="fas fa-caret-down" />
+            <Link to="/BookNow" className="nav-links" onClick={closeMobileMenu}>
+              Book Now {dropdown && <Dropdown />}
+              <i className="fas fa-caret-down" />
             </Link>
-            {dropdown && <Dropdown />}
           </li>
           <li className="nav-item"></li>
           <li className="nav-item"></li>

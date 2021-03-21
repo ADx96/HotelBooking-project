@@ -13,7 +13,7 @@ export const BigImage = styled.image``;
 
 export const Textblock = styled.div`
   position: absolute;
-  top: 72%;
+  top: 276%;
   right: 20px;
   background-color: black;
   color: white;
@@ -23,7 +23,7 @@ export const Textblock = styled.div`
   padding-bottom: 250px;
 `;
 export const CardsContainer = styled.div`
-  margin-top: 55%;
+  margin-top: 15%;
   margin-left: 15%;
 `;
 
@@ -33,4 +33,21 @@ export const CardsContainer2 = styled.div`
 `;
 export const Gallery = styled.div`
   margin-top: 2%;
+`;
+
+export const Banner = styled.div`
+  margin-top: 0;
+  margin-left: 0;
+`;
+
+export const H1 = styled.h1`
+  text-align: center;
+  margin-top: 50px;
+`;
+
+export const H11 = styled.h1`
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-right: 20%;
 `;
