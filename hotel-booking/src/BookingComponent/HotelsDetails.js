@@ -18,7 +18,10 @@ const HotelsDetails = (props) => {
 
       <p>{hotel.description}</p>
       <p>{hotel.price} KD</p>
+      
     </DetailWrapper>
+ 
+
   );
 };
 
