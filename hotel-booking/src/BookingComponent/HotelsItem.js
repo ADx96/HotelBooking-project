@@ -25,15 +25,13 @@ const ProductItem = ({ hotel }) => {
         <MDBCol md="3">
           <MDBCard wide cascade>
             <MDBView cascade>
-              <Link to={`/BookNow/Hotel/${hotel.slug}`}>
-                <MDBCardImage
-                  hover
-                  overlay="white-slight"
-                  className="card-img-top"
-                  src={hotel.image}
-                  alt="Card cap"
-                />
-              </Link>
+              <MDBCardImage
+                hover
+                overlay="white-slight"
+                className="card-img-top"
+                src={hotel.image}
+                alt="Card cap"
+              />
             </MDBView>
 
             <MDBCardBody cascade className="text-center">

@@ -11,14 +11,14 @@ export const Logo = styled(Link)`
 
 export const Textblock = styled.div`
   position: absolute;
-  top: 494%;
-  right: 20px;
-  background-color: black;
+  top: 387%;
+  left: 65%;
+  background-color: #000000db;
   color: white;
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  padding-top: 253px;
+  padding-bottom: 243px;
 `;
 export const CardsContainer = styled.div`
   margin-top: 15%;

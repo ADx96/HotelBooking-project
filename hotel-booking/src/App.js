@@ -6,6 +6,7 @@ import { Redirect } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import FooterP from "./Components/Footer";
 import Booking from "./pages/Booking";
+import BookingSubmission from "./pages/BookingSubmission";
 function App() {
   return (
     <>
@@ -14,6 +15,9 @@ function App() {
       <Switch>
         <Route path="/BookNow" exact>
           <Booking />
+        </Route>
+        <Route path="/BookingSubmission" exact>
+          <BookingSubmission />
         </Route>
         <Route path="/" exact>
           <HomePage />

@@ -17,8 +17,10 @@ import "bootstrap-css-only/css/bootstrap.min.css";
 import "../App.css";
 import { H11 } from "./Styles";
 import ReactStars from "react-rating-stars-component";
+import img5 from "../media/5.jpg";
+import { Link } from "react-router-dom";
 
-const Cards = () => {
+const Cards = ({ hotel }) => {
   const ratingChanged = (newRating) => {
     console.log(newRating);
   };
@@ -57,7 +59,9 @@ const Cards = () => {
                 size={24}
                 activeColor="#ffd700"
               />
-              <MDBBtn>BOOK NOW</MDBBtn>
+              <Link to={`/BookingSubmission`}>
+                <MDBBtn>BOOK NOW </MDBBtn>
+              </Link>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -67,7 +71,7 @@ const Cards = () => {
               hover
               overlay="white-light"
               className="card-img-top"
-              src=""
+              src={img5}
               alt="man"
             />
 
@@ -86,7 +90,7 @@ const Cards = () => {
                 size={24}
                 activeColor="#ffd700"
               />
-              ,<MDBBtn>BOOK NOW</MDBBtn>
+              <MDBBtn>BOOK NOW</MDBBtn>
             </MDBCardBody>
           </MDBCard>
         </MDBCol>

@@ -9,7 +9,7 @@ const HotelsDetails = (props) => {
   return (
     <DetailWrapper>
       <Link to={`/BookNow/`}>
-        <p>Back to Products</p>
+        <p>Back Bookings</p>
       </Link>
 
       <h1>{hotel.name}</h1>
@@ -18,10 +18,14 @@ const HotelsDetails = (props) => {
 
       <p>{hotel.description}</p>
       <p>{hotel.price} KD</p>
-      
+      <p>{hotel.rating}</p>
+      <p>{hotel.hotellocation}</p>
+      <p>{hotel.hotellocation}</p>
+      <p>{hotel.room}</p>
+      <Link to={`/BookingSubmission`}>
+        <MDBBtn hotelId={hotel.id}>BOOK NOW </MDBBtn>
+      </Link>
     </DetailWrapper>
- 
-
   );
 };
 
