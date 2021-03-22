@@ -18,7 +18,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "../App.css";
 
-const ProductItem = ({ hotel }) => {
+const HotelItem = ({ hotel }) => {
   return (
     <ProductWrapper>
       <MDBRow>
@@ -36,12 +36,12 @@ const ProductItem = ({ hotel }) => {
 
             <MDBCardBody cascade className="text-center">
               <MDBCardTitle className="card-title">
-                <strong>{hotel.name}</strong>
+                <strong>{hotel.hotelname}</strong>
               </MDBCardTitle>
 
               <MDBCardText>{hotel.description}</MDBCardText>
               <p className="product-price">{hotel.price} KD</p>
-
+              <p className="product-price">{hotel.hotellocation} KD</p>
               <Link to={`/BookNow/Hotel/${hotel.slug}`}>
                 <MDBBtn hotelId={hotel.id}>BOOK NOW</MDBBtn>
               </Link>
@@ -53,4 +53,4 @@ const ProductItem = ({ hotel }) => {
   );
 };
 
-export default ProductItem;
+export default HotelItem;

@@ -1,10 +1,10 @@
 import React from "react";
-import { DetailWrapper } from "../styles";
+import { DetailWrapper } from "../Components/Styles";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import { MDBBtn } from "mdbreact";
 const HotelsDetails = (props) => {
-  const hotelSlug = useParams().hotelSlug;
+  const hotelSlug = useParams().hotelslug;
   const hotel = props.hotels.find((hotel) => hotel.slug === hotelSlug);
   return (
     <DetailWrapper>
@@ -12,7 +12,7 @@ const HotelsDetails = (props) => {
         <p>Back Bookings</p>
       </Link>
 
-      <h1>{hotel.name}</h1>
+      <h1>{hotel.hotelname}</h1>
 
       <img src={hotel.image} alt={hotel.name} />
 
@@ -20,10 +20,9 @@ const HotelsDetails = (props) => {
       <p>{hotel.price} KD</p>
       <p>{hotel.rating}</p>
       <p>{hotel.hotellocation}</p>
-      <p>{hotel.hotellocation}</p>
       <p>{hotel.room}</p>
       <Link to={`/BookingSubmission`}>
-        <MDBBtn hotelId={hotel.id}>BOOK NOW </MDBBtn>
+        <MDBBtn BOOK NOW></MDBBtn>
       </Link>
     </DetailWrapper>
   );

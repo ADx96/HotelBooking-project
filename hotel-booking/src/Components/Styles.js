@@ -49,7 +49,10 @@ export const H11 = styled.h1`
   margin-bottom: 70px;
   margin-right: 20%;
 `;
-export const ProductWrapper = styled.div``;
+export const ProductWrapper = styled.div`
+  display: inline;
+`;
+export const DetailWrapper = styled.div``;
 export const SearchBarStyled = styled.input`
   padding: 0.5rem;
   margin: 1rem auto;

@@ -4,42 +4,18 @@ import "../App.css";
 import contactStore from "../Mobx/ContactMobx";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [number, setNumber] = useState("");
-
   const [loader, setLoader] = useState(false);
 
   const [contact, setContact] = useState({
-    name: "",
+    Customername: "",
+    mobile: 0,
     email: "",
-    description: "",
+    message: "",
   });
 
   const handleChange = (event) => {
     setContact({ ...contact, [event.target.name]: event.target.value });
   };
-
-  //     db.collection("contacts")
-  //       .add({
-  //         name: name,
-  //         email: email,
-  //         message: message,
-  //       })
-  //       .then(() => {
-  //         setLoader(false);
-  //         alert("Your message has been submitted👍");
-  //       })
-  //       .catch((error) => {
-  //         alert(error.message);
-  //         setLoader(false);
-  //       });
-
-  //     setName("");
-  //     setEmail("");
-  //     setMessage("");
-  //   };
 
   const handleSubmit = (event) => {
     alert("form is submitted👍");
@@ -53,32 +29,36 @@ const Contact = () => {
 
       <label>Name</label>
       <input
-        require
+        required
         placeholder="Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        type="text"
+        name="Customername"
+        onChange={handleChange}
       />
 
       <label>Email</label>
       <input
-        require
+        required
         placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
+        type="text"
+        name="email"
+        onChange={handleChange}
       />
       <label>Mobile</label>
       <input
-        require
+        required
         placeholder="mobile"
-        value={number}
+        type="text"
+        name="mobile"
         onChange={handleChange}
-        onChange={(e) => setNumber(e.target.value)}
       />
       <label>Message</label>
       <textarea
+        required
         placeholder="Message"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
+        type="text"
+        name="message"
+        onChange={handleChange}
       ></textarea>
 
       <button

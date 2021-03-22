@@ -13,6 +13,7 @@ import Switch from "@material-ui/core/Switch";
 import TextField from "@material-ui/core/TextField";
 import { useParams } from "react-router-dom";
 import { MDBBtn } from "mdbreact";
+
 const useStyles = makeStyles((theme) => ({
   button: {
     display: "block",
@@ -38,10 +39,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
-function BookingSubmission(props) {
+function BookingSubmission(hotel) {
   const [value, setValue] = React.useState("Controlled");
-  const hotelSlug = useParams().hotelSlug;
-  const hotel = props.hotels.find((hotel) => hotel.slug === hotelSlug);
+
   const classes = useStyles();
   const [age, setAge] = React.useState("");
   const [open, setOpen] = React.useState(false);
@@ -154,7 +154,7 @@ function BookingSubmission(props) {
             <MenuItem value="">
               <em>None</em>
             </MenuItem>
-            <MenuItem value={hotel.name}>Ten</MenuItem>
+            <MenuItem value={10}>{hotel.hotelname}</MenuItem>
           </Select>
         </FormControl>
       </div>
