@@ -12,7 +12,7 @@ const HotelsDetails = (props) => {
         <p>Back Bookings</p>
       </Link>
 
-      <h1>{hotel.hotelname}</h1>
+      <h1>{hotel.name}</h1>
 
       <img src={hotel.image} alt={hotel.name} />
 

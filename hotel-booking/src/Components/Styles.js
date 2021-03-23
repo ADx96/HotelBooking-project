@@ -11,7 +11,7 @@ export const Logo = styled(Link)`
 
 export const Textblock = styled.div`
   position: absolute;
-  top: 417%;
+  top: 357%;
   left: 65%;
   background-color: #000000db;
   color: white;
@@ -49,13 +49,49 @@ export const H11 = styled.h1`
   margin-bottom: 70px;
   margin-right: 20%;
 `;
-export const ProductWrapper = styled.div`
-  display: inline;
-`;
+export const ProductWrapper = styled.div``;
 export const DetailWrapper = styled.div``;
 export const SearchBarStyled = styled.input`
   padding: 0.5rem;
   margin: 1rem auto;
   display: block;
   width: 40%;
+`;
+
+export const ActorCard = styled.div`
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  width: 25%;
+  padding: 0 10px;
+  display: inline-flex;
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+  color: ${(props) => props.theme.ahmad};
+  filter: ${(props) => props.theme.pink};
+  :root {
+    @media (min-width: 768px) {
+    }
+
+    @media (max-width: 2560px) {
+      width: 25%;
+      padding: 0 10px;
+      display: inline-flex;
+      margin: 20px;
+      text-align: center;
+    }
+  }
+`;
+export const Moviestext = styled.p`
+  display: contents;
+  font-family: "Revalia", cursive;
+  font-size: x-small;
+  font-size: 1vw;
+  font-weight: bolder;
+`;
+export const ShopImage = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 `;

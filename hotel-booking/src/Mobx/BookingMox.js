@@ -6,7 +6,10 @@ class BookingStore {
 
   createBooking = async (newBooking) => {
     try {
-      const res = await axios.post("http://localhost:8000/Booking", newBooking);
+      const res = await axios.post(
+        "http://localhost:8000/Bookings",
+        newBooking
+      );
       this.bookings.push(res.data);
     } catch (error) {
       console.log("log1 -> CreateContact -> error", error);
@@ -15,7 +18,7 @@ class BookingStore {
 
   fetchBooking = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/Booking");
+      const response = await axios.get("http://localhost:8000/Bookings");
       this.bookings = response.data;
       console.log(this.bookings);
     } catch (error) {
@@ -26,7 +29,7 @@ class BookingStore {
   updateBooking = async (updateBooking) => {
     try {
       await axios.put(
-        `http://localhost:8000/Contact/${updateBooking.id}`,
+        `http://localhost:8000/Bookings/${updateBooking.id}`,
         updateBooking
       );
       const booking = this.bookings.find(
