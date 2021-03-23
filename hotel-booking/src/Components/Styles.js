@@ -11,7 +11,7 @@ export const Logo = styled(Link)`
 
 export const Textblock = styled.div`
   position: absolute;
-  top: 387%;
+  top: 417%;
   left: 65%;
   background-color: #000000db;
   color: white;

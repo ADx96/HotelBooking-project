@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import { Logo } from "./Styles";
 import Dropdown from "../Components/DropDown";
-
+import BME from "../media/BME.jpg";
 function NavBar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -32,7 +32,7 @@ function NavBar() {
       <nav className="navbar">
         <Link to="/HomePage">
           <Logo className="navbar-brand" to="/">
-            <img src="" alt="logo" />
+            <img src={BME} alt="logo" />
           </Logo>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
