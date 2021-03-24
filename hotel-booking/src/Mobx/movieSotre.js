@@ -6,7 +6,7 @@ class MovieAPIStore {
 
   fetchMovie = async () => {
     try {
-      const response = await axios.get("http://5e9d12e6fbda.ngrok.io/Movies");
+      const response = await axios.get("http://e8c5f1ec48e8.ngrok.io/Movies");
       this.movies = response.data;
       console.log(this.movies);
     } catch (error) {

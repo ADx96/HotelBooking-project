@@ -206,7 +206,7 @@
 }
 
 .hovereffect .overlay {
-  width: 100%;
+  width: 96%;
   height: 100%;
   position: absolute;
   overflow: hidden;
@@ -214,17 +214,15 @@
   left: 0;
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 .hovereffect img {
   display: block;
+  height: 213px;
   position: relative;
-  -webkit-transition: all 0.4s linear;
   transition: all 0.4s linear;
 }
-
 .hovereffect h2 {
   text-transform: uppercase;
   color: #fff;

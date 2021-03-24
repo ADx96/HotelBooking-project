@@ -9,10 +9,6 @@ let style = {
 function ImageText() {
   return (
     <div class="Image-container">
-      <Textblock>
-        <h4>Nature</h4>
-        <p>What a beautiful sunrise</p>
-      </Textblock>
       <img src={img4} alt="" style={style} />
     </div>
   );

@@ -9,7 +9,8 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Switch from "@material-ui/core/Switch";
 import { withStyles } from "@material-ui/core/styles";
-import Movieslist from "../BookingComponent/MovieList";
+import { observer } from "mobx-react";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     "& > *": {
@@ -55,8 +56,9 @@ const AntSwitch = withStyles((theme) => ({
   checked: {},
 }))(Switch);
 
-const BookingSubmission = () => {
+const BookingSubmission = ({ hotel }) => {
   const classes = useStyles();
+
   const [booking, setHotel] = useState({
     hotelname: "",
     customername: "",
@@ -94,10 +96,13 @@ const BookingSubmission = () => {
           label="Hotel name"
           variant="outlined"
           required
-          type="text"
+          value={hotel.hotelname}
           className="form-control"
           name="hotelname"
           onChange={handleChange}
+          InputProps={{
+            readOnly: true,
+          }}
         />
         <TextField
           id="filled-read-only-input"
@@ -128,15 +133,16 @@ const BookingSubmission = () => {
           min="1"
           className="form-control"
           name="price"
+          value={hotel.price}
           onChange={handleChange}
-          // InputProps={{
-          //   readOnly: true,
-          // }}
+          InputProps={{
+            readOnly: true,
+          }}
         />
 
         <TextField
           id="outlined-basic"
-          label="Enter your passport"
+          label="Enter your passport number "
           variant="outlined"
           required
           type="text"
@@ -147,13 +153,17 @@ const BookingSubmission = () => {
 
         <TextField
           id="outlined-basic"
-          label="location"
+          label=" Hotel location"
           required
           variant="outlined"
           type="text"
           className="form-control"
           name="hotellocation"
+          value={hotel.hotellocation}
           onChange={handleChange}
+          InputProps={{
+            readOnly: true,
+          }}
         />
         <div className="col-6">
           <TextField
@@ -200,7 +210,7 @@ const BookingSubmission = () => {
 
         <Typography component="div">
           <Grid component="label" container alignItems="center" spacing={1}>
-            <Grid item>false</Grid>
+            <Grid item>yes</Grid>
             <Grid item>
               <AntSwitch
                 checked={booking.movienight}
@@ -208,7 +218,7 @@ const BookingSubmission = () => {
                 onChange={handleChange2}
               />
             </Grid>
-            <Grid item>true</Grid>
+            <Grid item>no</Grid>
           </Grid>
         </Typography>
 
@@ -221,10 +231,8 @@ const BookingSubmission = () => {
           Submit Booking
         </Button>
       </form>
-
-      <Movieslist />
     </div>
   );
 };
 
-export default BookingSubmission;
+export default observer(BookingSubmission);

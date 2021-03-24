@@ -6,9 +6,9 @@ import { Redirect } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import FooterP from "./Components/Footer";
 import Booking from "./pages/Booking";
-import BookingSubmission from "./pages/BookingSubmission";
 import HotelsDetails from "./BookingComponent/HotelsDetails";
-import hotelsmobx from "./BookingComponent/HotelsMobx";
+import MovieList from "./BookingComponent/MovieList";
+
 function App() {
   return (
     <>
@@ -18,11 +18,9 @@ function App() {
         <Route path="/BookNow" exact>
           <Booking />
         </Route>
-        <Route path="/BookingSubmission" exact>
-          <BookingSubmission />
-        </Route>
+
         <Route path="/BookNow/Hotel/:hotelslug" exact>
-          <HotelsDetails hotels={hotelsmobx.hotels} />
+          <HotelsDetails />
         </Route>
         <Route path="/" exact>
           <HomePage />

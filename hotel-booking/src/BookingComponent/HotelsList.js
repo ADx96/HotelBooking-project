@@ -1,6 +1,5 @@
 import React from "react";
 import HotelItem from "../BookingComponent/HotelsItem";
-import { ProductWrapper } from "../Components/Styles";
 import hotelsmobx from "../BookingComponent/HotelsMobx";
 import { observer } from "mobx-react";
 import SearchBar from "../Components/SearchBar";
@@ -18,7 +17,7 @@ const Hotels = () => {
   return (
     <div>
       <SearchBar setQuery={setQuery} />
-      <ProductWrapper>{hotelList}</ProductWrapper>
+      <div style={{ display: "flex", marginLeft: "5%" }}>{hotelList}</div>
     </div>
   );
 };

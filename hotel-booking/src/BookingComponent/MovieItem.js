@@ -1,9 +1,9 @@
 import React from "react";
 import { ActorCard } from "../Components/Styles";
 import { ShopImage, Moviestext } from "../Components/Styles";
-
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
+import { observer } from "mobx-react";
 
 const MoviesItem = ({ movies }) => {
   const [state, setState] = React.useState({

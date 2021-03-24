@@ -49,8 +49,11 @@ export const H11 = styled.h1`
   margin-bottom: 70px;
   margin-right: 20%;
 `;
-export const ProductWrapper = styled.div``;
-export const DetailWrapper = styled.div``;
+
+export const DetailWrapper = styled.div`
+  width: 100%;
+  margin-left: 45%;
+`;
 export const SearchBarStyled = styled.input`
   padding: 0.5rem;
   margin: 1rem auto;
@@ -90,6 +93,13 @@ export const Moviestext = styled.p`
   font-weight: bolder;
 `;
 export const ShopImage = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+`;
+
+export const ProductWrapper = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;

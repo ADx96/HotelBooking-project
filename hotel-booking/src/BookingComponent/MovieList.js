@@ -2,6 +2,7 @@ import MovieItem from "./MovieItem";
 import React, { useState } from "react";
 import { ProductWrapper } from "../Components/Styles";
 import SearchBar from "../Components/SearchBar";
+
 import movieAPIStore from "../Mobx/movieSotre";
 import { observer } from "mobx-react";
 
@@ -15,7 +16,7 @@ const Movieslist = () => {
   return (
     <>
       <SearchBar setQuery={setQuery} />
-      <ProductWrapper>{movieslist}</ProductWrapper>
+      <div>{movieslist}</div>
     </>
   );
 };

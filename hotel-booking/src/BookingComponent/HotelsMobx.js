@@ -2,11 +2,13 @@ import { makeObservable, observable, action } from "mobx";
 import axios from "axios";
 class HotelsMobx {
   hotels = [];
+  loading = true;
 
   fetchHotel = async () => {
     try {
       const response = await axios.get("http://localhost:8000/Hotels");
       this.hotels = response.data;
+      this.loading = false;
     } catch (error) {
       console.error("Hotels -> fetchProducts -> error", error);
     }

@@ -84,12 +84,14 @@ const Cards = ({ hotel }) => {
                 Back in 1987, the DDR government pulled out all the stops to
                 celebrate the East German capital’s 750th birthday.{" "}
               </MDBCardText>
+
               <ReactStars
                 count={5}
                 onChange={ratingChanged}
                 size={24}
                 activeColor="#ffd700"
               />
+
               <MDBBtn>BOOK NOW</MDBBtn>
             </MDBCardBody>
           </MDBCard>
